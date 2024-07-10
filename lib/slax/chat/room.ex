@@ -9,7 +9,6 @@ defmodule Slax.Chat.Room do
     timestamps(type: :utc_datetime)
   end
 
-  @doc false
   def changeset(room, attrs) do
     room
     |> cast(attrs, [:name, :topic])
